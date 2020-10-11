@@ -1,33 +1,33 @@
 # Report: Predicting the Severity of Crashes in South Australia  
 
-### Discussing possibilities to reduce accidents numbers and better allocate traffic control resources
+## Discussions on how to reduce accidents numbers and better allocate traffic control resources
 
 
-#### 1. Introduction 
+### 1. Introduction 
 
-##### 1.1 Background
+#### 1.1 Background
 
 According to the WHO (World Health Organization), approximately 1.35 million people die each year victim of road accidents, with another 20+ million people suffering some kind of non-fatal injury from traffic crashes. Road traffic injuries are also the leading cause of death for children and young adults aged 5-29 years old, making it a problem to governments all over the world. Road traffic injuries can cause considerable economic losses to families and individuals and cost to most countries around 3% of their gross domestic product. 
 
 During 2019, from January to December, South Australia has seen 12,964 accidents with 114 fatalities and 6031 casualities, and both crashes and injuries can be prevented using data to predict the variables that influence on accidents. The allocation of resources such as traffic controllers and police, improvenents in the transport and roads planning, increase in public awareness, and identification of risk factors are all factors that can contribute to a reduction on number of accidents, consequently creating a more secure environment and saving lives.
 
-##### 1.2 Problem
+#### 1.2 Problem
 
 Through this study we want to identify the most relevant variables contributing to road crashes in South Australia (SA), and using the finds from this variable pose suggestions on the type of initiatives that can be applied to reduce accidents and move towards more secure roads. 
 
-##### 1.3 Audience / Interest: 
+#### 1.3 Audience / Interest: 
 
 The Government of South Australia and Australian Government - A proposed model to predict when and where accidents are more likely to happen will support the govenment on deciding how to allocate resources and reduce the burden on the economy caused by traffic crashes.
 
 
 
-#### 2. Data Acquisition and Cleaning
+### 2. Data Acquisition and Cleaning
 
-##### 2.1 Data Source
+#### 2.1 Data Source
 
 The data set has been acquired from an open source and is available from the Government of South Australiaa through the website of the Department of Infrastructure and Transport. Source: https://www.dpti.sa.gov.au/
 
-##### 2.2 About the Data Set
+#### 2.2 About the Data Set
 
 The data set include information on crashes that happened in South Australia during 2019 and include details on type of crash, number or units involved on the accident, if the person causing or involved in the accident was under influencing, day of the week, time, type of road, weather conditions, speed limit on the area, traffic control conditions and severity of the crashes, and information on severity of causualities.
 
@@ -209,14 +209,14 @@ The data set before claening has 12965 rowss and 33 columns, including headers. 
 </table>
 
 
-##### 2.3 Data Cleaning:
+#### 2.3 Data Cleaning:
 
 For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Year, Horizontal Align, Vertical Align, Other Feat, Crash Type, Unit Resp, Entity Code, CSEF Severity, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also 
 
 Both, DUI Ivolved and Drugs Involved columns will also be combined into a new column that will be named as 'Under Influence' and will be used to find the relationship between the use of substances and traffic crashes as well as its severity. 
 
 
-#### 3. Exploratory Data Analysis: 
+### 3. Exploratory Data Analysis: 
 
 
 <ol>

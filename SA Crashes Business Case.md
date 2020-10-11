@@ -211,25 +211,29 @@ The data set before claening has 12965 rowss and 33 columns, including headers. 
 
 #### 2.3 Data Cleaning
 
-For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Year, Time, Horizontal Align, Vertical Align, Other Feat, Crash Type, Unit Resp, Entity Code, CSEF Severity, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also 
+For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Total Fats, Total SI, Total MI, Year, Time, Horizontal Align, Vertical Align, Other Feat, Crash Type, Unit Resp, Entity Code, CSEF Severity, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also 
 
 Both, DUI Involved and Drugs Involved columns will also be combined into a new column that will be named as 'Under Influence' and will be used to find the relationship between the use of substances and traffic crashes as well as its severity. 
 
 #### 2.4 Data Formatting
 
-DUI Involved and Drugs Involved - Both variables have been combined into a new column called 'Under Influence', values have also been formated to where initial variable was 'Y' result will be indicated by '1', where there was people involved in the crash under the influence. Any fields showing NAN will have the value '0' added to it, where there was no people under the influence.
+<b>DUI Involved and Drugs Involved</b> - Both variables have been combined into a new column called 'Under Influence', values have also been formated to where initial variable was 'Y' result will be indicated by '1', where there was people involved in the crash under the influence, and any NaN values have been replaced by "0",indicating there was no one under the influence of substances involved in the crash.
+
+
+
+
 
 
 ### 3. Exploratory Data Analysis: 
 
 #### 3.1 Pearson Correlation and Heat Map
 <ol>
-  <li>What are the most relevant elements that contribute to road accidents?</li>
+  <li>What are the most relevant elements that contribute to road accidents with causalities?</li>
   <li>Would the time of the day or day of the week influence when an accident happen?</li>
   <li>What about the road conditions? The fact of a road being sealed or unsealed influence in accidents severity?</li>
 <li>Does rain impact on number of accidents?</li>
 <li>In case of accidents involving abuse of substances such as alcohol or drugs - what is the impact on the severity of a crash?</li>
 <li>Are there areas that require more attention do to higher concentration of accidents in the region? If so, what are the conditions in which accidents happen and what can we do to improve. ie. Reduce Speed Limit.</li>
-<li>Based on day of the week and location, how can we better allocate resources such as traffic controllers and police to a region to reduce risks of accident?</li>
+</li>
 </ol>
 

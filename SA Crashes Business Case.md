@@ -209,16 +209,20 @@ The data set before claening has 12965 rowss and 33 columns, including headers. 
 </table>
 
 
-#### 2.3 Data Cleaning:
+#### 2.3 Data Cleaning
 
-For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Year, Horizontal Align, Vertical Align, Other Feat, Crash Type, Unit Resp, Entity Code, CSEF Severity, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also 
+For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Year, Time, Horizontal Align, Vertical Align, Other Feat, Crash Type, Unit Resp, Entity Code, CSEF Severity, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also 
 
-Both, DUI Ivolved and Drugs Involved columns will also be combined into a new column that will be named as 'Under Influence' and will be used to find the relationship between the use of substances and traffic crashes as well as its severity. 
+Both, DUI Involved and Drugs Involved columns will also be combined into a new column that will be named as 'Under Influence' and will be used to find the relationship between the use of substances and traffic crashes as well as its severity. 
+
+#### 2.4 Data Formatting
+
+DUI Involved and Drugs Involved - Both variables have been combined into a new column called 'Under Influence', values have also been formated to where initial variable was 'Y' result will be indicated by '1', where there was people involved in the crash under the influence. Any fields showing NAN will have the value '0' added to it, where there was no people under the influence.
 
 
 ### 3. Exploratory Data Analysis: 
 
-
+#### 3.1 Pearson Correlation and Heat Map
 <ol>
   <li>What are the most relevant elements that contribute to road accidents?</li>
   <li>Would the time of the day or day of the week influence when an accident happen?</li>

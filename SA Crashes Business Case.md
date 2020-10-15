@@ -31,193 +31,157 @@ The data set has been acquired from an open source and is available from the Gov
 
 The data set include information on crashes that happened in South Australia during 2019 and include details on type of crash, number or units involved on the accident, if the person causing or involved in the accident was under influencing, day of the week, time, type of road, weather conditions, speed limit on the area, traffic control conditions and severity of the crashes, and information on severity of causualities.
 
-The data set before claening has 12965 rowss and 33 columns, including headers. More invormation on the data and a description of all fields included below: 
+The data set before cleaning has 12965 rows and 33 columns, including headers. More invormation on the data and a description of all fields included below: 
 
 
 <table>
   <tr>
   <th left-align> Column Name </th> 
   <th left-align> Info about data</th>
-  <th left-align> Number of Data Entries</th>
-  </tr>
+    </tr>
   <tr>
     <td> REPORT_ID</td>
     <td> Unique number assigned to records to separate individual crashes </td>
-    <td> 12964 </td>
-  </tr>
+    </tr>
   <tr>
     <td>Stats Area</td>
     <td>A code defining whether the road crash occurred within City, Metro or Country Area</td>
-    <td> 12964 </td>
-  </tr>
+   </tr>
   <tr>
     <td> Suburb </td>
     <td> The Suburb that the crash occurred in</td>
-    <td>12964 </td>
   </tr>
   <tr>
     <td> Postcode </td>
     <td> The Postcode that the crash occurred in </td>
-    <td> 12964 </td>
   </tr>
   <tr>
     <td> LGA Name </td>
     <td> The Local Government Area that the crash occurred in</td>
-    <td> 12857 </td>
   </tr>
   <tr>
     <td> Total Units </td>
     <td> The total number of units involved in a road crash</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Total Cas </td>
     <td> Stands for Total Casualities. Total number of casualties (fatalities and treated injuries) as a result of a road crash</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Total Fats </td>
     <td> Stands for Total Fatalities. Total number of fatalities as a result of a road crash</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Total SI </td>
     <td> Stands for Total Serious Injuries. Total number of people admitted to hospital with overnight stay as a result of a road crash</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Total MI </td>
     <td> Stands for Total Minor Injuries. Total number of people treated by private doctor or treated at hospital but not admitted</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Year </td>
     <td> Year of the crash</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Month </td>
     <td> Month in which the accident took place</td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Day </td>
     <td> The day of the week the crash occurred </td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Time </td>
     <td> The reported time of the crash </td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Area Speed </td>
     <td> The speed limit at the time and location of the crash </td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Position Type </td>
     <td> Identifying if a crash location was at an intersection or midblock </td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Horizontal Align </td>
     <td> Defines the horizontal alignment of the road at the sight of the crash </td>
-    <td> 12964 </td>
   </tr>
 <tr>
     <td> Vertical Align </td>
     <td> Defines the vertical alignment of the road at the sight of the crash </td>
-    <td> 12964 </td>
   </tr>
  <tr>
     <td> Other Feat </td>
     <td> Defines other relevant features of the crash site locations </td>
-    <td> 12964 </td>
   </tr>
  <tr>
     <td> Road Surface </td>
     <td> Defines the road surface type at the crash location</td>
-    <td> 12964 </td>
   </tr>
  <tr>
     <td> Moisture Cond </td>
     <td> Defines the pavement surface moisture condition at the crash location</td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> Weather Cond </td>
     <td> Defines the weather condition at the time and location of the crash </td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> DayNight </td>
     <td> The lighting condition at the time and location of the crash </td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> Crash Type </td>
     <td> Defines the road crash type </td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> Unit Resp </td>
     <td> The number of the unit determined to be responsible for the road crash </td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> Entity Code </td>
     <td> A code defining the entity deemed to be responsible for the road crash</td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> CSEF Severity </td>
     <td>Defines the road crash severity (classified by the highest injury severity sustained in the crash). Decoded values:“3: SI” = Serious Injury, “2: MI” = Minor Injury, “1: PDO”= Property Damage Only </td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> Traffic Ctrls </td>
     <td> Defines the traffic control at the time and location of the road crash </td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> DUI Involved </td>
     <td> Involved if at least one controller in the crash recorded an illegal Blood Alcohol Concentration level</td>
-    <td> 349 </td>
   </tr>  
 <tr>
 <tr>  
     <td> Drugs Involved </td>
     <td> Involved if at least one controller in the crash tested positive for a prescribed drug (THC (cannabis), methylamphetamine (speed, ice or crystal meth) or MDMA (ecstasy))</td>
-    <td> 314 </td>
   </tr>  
 <tr> 
     <td> ACCLOC_X  </td>
     <td> The Y coordinate of the crash when located</td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> ACCLOC_Y</td>
     <td> The Y coordinate of the crash when located</td>
-    <td> 12964 </td>
   </tr>  
 <tr>
     <td> UNIQUE_LOC  </td>
     <td> A concatenation of the X and Y coordinates for the purpose of grouping crashes</td>
-    <td> 12964 </td>
   </tr>  
 </table>
 
 
 #### 2.3 Data Cleaning
 
-For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Total Fats, Total SI, Total MI, Year, Time, Horizontal Align, Vertical Align, Other Feat, Crash Type, Unit Resp, Entity Code, CSEF Severity, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also 
-
-Both, DUI Involved and Drugs Involved columns will also be combined into a new column that will be named as 'Under Influence' and will be used to find the relationship between the use of substances and traffic crashes as well as its severity. 
+For the purpose of this report we have dropped the following columns on the data set: REPORT_ID, Postcode, LGA Name, Total Cas, Total Fats, Total SI, Total MI, Year, Month, Time, Horizontal Align, Vertical Align, Other Feat, Unit Resp, Entity Code, ACCLOC_X, ACCLOC_Y, UNIQUE_LOC. We have also combined both, DUI Involved and Drugs Involved columns will also be combined into a new column that will be named as 'Under Influence' and will be used to find the relationship between the use of substances and traffic crashes as well as its severity. 
 
 #### 2.4 Data Formatting
 
-<b>DUI Involved and Drugs Involved</b> - Both variables have been combined into a new column called 'Under Influence', values have also been formated to where initial variable was 'Y' result will be indicated by '1', where there was people involved in the crash under the influence, and any NaN values have been replaced by "0",indicating there was no one under the influence of substances involved in the crash.
+<b>DUI Involved and Drugs Involved</b> - Both variables have been combined into a new column called 'Under Influence'. values have also been formated to where initial variable was 'Y' result will be indicated by '1', where there was people involved in the crash under the influence, and any NaN values have been replaced by "0",indicating there was no one under the influence of substances involved in the crash.
 
 
 

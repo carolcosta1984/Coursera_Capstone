@@ -197,8 +197,7 @@ After creating the new variable, both the DUI Involved and Drug Involved fields 
 
 With the area speed I have plotted a BoxPlot graphic to determine how the increase in the area speed was related to the severity of accidents, and as expected the highest the speed, the higher the severity of an accident. 
 
-<img src="https://1drv.ms/u/s!Atcy32bbrRg24A0-TocsLaaNrWQE?e=GV1Wgg">
-
+<img src= "C:\Users\carol\OneDrive\Desktop\Area Speed.PNG">
 
 
 

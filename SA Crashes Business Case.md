@@ -188,10 +188,11 @@ For the purpose of this report we have dropped the following columns on the data
 <b> DUI Involved and Drugs Involved</b>
 
 The first variable I have worked was the substances. I merged both variables into one colunm called "Under Influence", in which:
-
-0: Not under influence
-1: Under the influence of either Alcohol or Other Substances
-2: Under the influence of both Alcohol and Other Substances
+<ul>
+  <li>0: Not under influence</li>
+  <li>1: Under the influence of either Alcohol or Other Substances</li>
+  <li>2: Under the influence of both Alcohol and Other Substances</li>
+ </ul>
 
 After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. I have also checked on how driving under the influence of substances relates to the severity of accidents, and the results indicates that fatalities happen in 0.06% of the cases in which no substance consumption is involved, increasing to 3% when at least one substance (either alcohol or drugs) is consumed, and 18% when both alcohol and drugs have been consumed. 
 
@@ -218,10 +219,11 @@ I have used a boxplot to observe if the number of units involved on a crash woul
 <b> Area and Suburb </b>
 
 Again there are not strong correlation on the severity of crashes and the area in which occurs. With fatalities reported if accidents happenend in the city sitting at 0.1%, Metropolitan Region at 0.4% and Country at 0.3%. I have processed the data to convert it to an integer, with the following code: 
-
-1: City
-2: Metropolitan
-3: Country
+<ul>
+  <li>1: City</li>
+  <li>2: Metropolitan</li>
+  <li>3: Country</li>
+ </ul>
 
 For the sole purpose of this project and to facilitate the data analysis, I have dropped the Suburb in which the accidents have occurred, but I will address my recommendation to this variable later in this case study. 
 
@@ -232,17 +234,47 @@ I have analysed every single one of the variables, and any of them containing va
 
 #### 3.2 Questions 
 
-<ol>
+<ul>
   <li>What are the variables close related to the severity of injured victims from road accidents?</li>
   <li>Are accidents involving abuse of substances such as alcohol or drugs - what is the impact on the severity of a crash?</li>
   <li>Are there areas that require more attention from traffic controllers due to a higher number of accidents involving more severe injuries or fatalities? </li>
   <li>What are the initiatives that in theory could support the reduction of accidents and potentially drive a ZERO Fatality rate from Crashes in SA?</li>
-</ol>
+</ul>
 
 
 ### 4. Model:
 
 #### 4.1 The Decision Tree
 
+Decision Trees are models schematically presented in the structure of a tree and as a rle, it starts with a root node and branches into variable possible outcomes. 
+A decision tree in the case of Severity of Accidents would help the SA government determine things such as when to allocate additional emergency services to an area or deploy additional traffic controllers to the city/metropolitan regions/ country locations. 
 
+#### 4.2 The Modelling Process
+
+<b>Define X and Y </b>
+
+<ul>
+  <li> Step 1: I have set up a new dataframe called <i> Feature </i> using the following variables: Stats Area, Total Units, Day, Area Speed, Weather Cond, DayNight, Under Influence. During this process, in the code, I have also used the pd.getdummies function to Transform the Position Type variable into an integer.</li>
+  <li> Step 2: I have defined X using the Feature Dataframe. </li>
+  <li> Step 3: I have defined Y with the CSEF Severity variable. </li>
+  <li> Step 4: I have normalized X. </li>
+  <li> Step 5: I split the data into <i>Sample</i> and <i>Training</i>. Using 30% of the data to test and the remaining 70% to train the model.</li> 
+  <li> Step 6: I used the X_DTTrain and Y_DTTrain to train and fit my decision tree model.</li>
+  <li> Step 7: I used my Y_DTTest data to check the accuracy of the model and predict the severity of crashes.</li>
+ </ul>
+ 
+ <strong> Note! </strong> All code is available on the Watson's Notebook submitted in the Coursera_Capstone Repository under the name Coursera_Capstone_Final.ipynb.
+ 
+ #### 4.2 Decision Tree Accuracy
+ 
+ The Jaccard Similary / Metrics for Accuracy shows that the Prediction Tree on the test set would return a correct prediction in 64% of the cases. The F1-Score weighted predicts that the accuracy of the model is of 53%.
+ 
+ In order to determine the accuracy, all metrics functions/libraries were downloaded and coded for the purpose.
+ 
+ 
+ ### 5. Conclusion
+ 
+ 
+  
+    
 

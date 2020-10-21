@@ -196,23 +196,17 @@ The first variable I have worked was the substances. I merged both variables int
 
 After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. I have also checked on how driving under the influence of substances relates to the severity of accidents, and the results indicates that fatalities happen in 0.06% of the cases in which no substance consumption is involved, increasing to 4% when at least one substance (either alcohol or drugs) is consumed, and 18% when both alcohol and drugs have been consumed. 
 
-<p align="left">
-  <img src="https://1drv.ms/u/s!Atcy32bbrRg24CIzmjtQE1BFn8aC?e=fhJJu1" width="350">
-</p>
+![Influence Vs CSEF](https://user-images.githubusercontent.com/69182674/96688898-6cd42d00-13cd-11eb-9e97-87de00a7c348.jpg)
 
 While still working with this variable, I have also identified that accidents that happen during the weekend have more chances of having conductors under the influence of substance, in opposite to accidents happening early and mid-week. 
 
-<p align="left">
-  <img src="https://1drv.ms/u/s!Atcy32bbrRg24CBeJR05jfzXaPKi?e=GI9M8f" width="350">
-</p>
+![Days vs Influence](https://user-images.githubusercontent.com/69182674/96688916-7198e100-13cd-11eb-926f-8417abb0aa1d.jpg)
 
 <b> Area Speed </b> 
 
 With the area speed I have plotted a BoxPlot graphic to determine how the increase in the area speed was related to the severity of accidents, and as expected the highest the speed, the higher the severity of an accident. 
 
-<p align="left">
-  <img src="https://1drv.ms/u/s!Atcy32bbrRg24CPpAGQB92b8iwaG?e=77NiGS" width="350">
-</p>
+![Area Speed Vs CSEF](https://user-images.githubusercontent.com/69182674/96688932-75c4fe80-13cd-11eb-890f-a5b9be12766c.jpg)
 
 <b> Road Surface, Moisture Cond, Traffic Ctrls, Crash Type</b>
 
@@ -226,9 +220,7 @@ Although, also not showing a strong correlation to the severity of accidents, we
 
 I have used a boxplot to observe if the number of units involved on a crash would be related with the severity of injuries, and identified that most accidents that have fatalities involve 2 or 3 units, therefore I have dropped all other data entries containing less than 2 and more than 3 vehicles. 
 
-<p align="left">
-  <img src="https://onedrive.live.com/?authkey=%21ADD%5F5kH7hMddp2Q&cid=3618ADDB66DF32D7&id=3618ADDB66DF32D7%2112321&parId=3618ADDB66DF32D7%2112280&o=OneUp" width="350">
-</p>
+![Units x CSEF](https://user-images.githubusercontent.com/69182674/96688878-63e35b80-13cd-11eb-8031-474f06b073b4.jpg)
 
 <b> Area and Suburb </b>
 

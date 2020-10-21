@@ -295,3 +295,5 @@ The decision tree model did not have a high accuracy due to the number of variab
  As mentioned the model accuracy in this occasion is not ideal, due to the lack of correlated variables and the severity of accident. Future directions, including more data collection and combining variables from other sources from the government, such as gender, age and cases in which the patients enter an hospital as a serious injury and end up becoming a fatality. 
  
  The model needs to keep being refit for improved performance, and tests conduced if any of the suggestions to reduce the severity of the accidents has created a positive impact. 
+ 
+ An additional suggestion to fit a more detailed model is creating maps to determine by suburb where the highest concentration of accidents happen and analyse also what is the severity of cases and not only number of accidents in those areas, and use this variable to improve further how personal and assets are allocated. 

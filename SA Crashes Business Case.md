@@ -185,36 +185,64 @@ For the purpose of this report we have dropped the following columns on the data
 
 #### 3.1 Data Exploratory Analysis and Processing
 
-<b> DUI Involved and Drugs Involved</b>: the first variable I have worked was the substances. I merged both variables into one colunm called "Under Influence", in which:
+<b> DUI Involved and Drugs Involved</b>
+
+The first variable I have worked was the substances. I merged both variables into one colunm called "Under Influence", in which:
 
 0: Not under influence
 1: Under the influence of either Alcohol or Other Substances
 2: Under the influence of both Alcohol and Other Substances
 
-After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. 
+After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. I have also checked on how driving under the influence of substances relates to the severity of accidents, and the results indicates that fatalities happen in 0.06% of the cases in which no substance consumption is involved, increasing to 3% when at least one substance (either alcohol or drugs) is consumed, and 18% when both alcohol and drugs have been consumed. 
+
+While still working with this variable, I have also identified that accidents that happen during the weekend have more chances of having conductors under the influence of substance, in opposite to accidents happening early and mid-week. 
 
 <b> Area Speed </b> 
 
 With the area speed I have plotted a BoxPlot graphic to determine how the increase in the area speed was related to the severity of accidents, and as expected the highest the speed, the higher the severity of an accident. 
 
-<img src= "C:\Users\carol\OneDrive\Desktop\Area Speed.PNG">
+NOTE: INSERT GRAPH HERE! 
+
+<b> Road Surface, Moisture Cond, Traffic Ctrls, Crash Type</b>
+
+After evaluating those variables, none of them were identified as having a strong correlation to the severity of accidents, therefore we dropped them from our analysis. 
+
+<b> DayNight & Weather Cond</b>
+
+Although, also not showing a strong correlation to the severity of accidents, we have processed and kept both variables for the model. 
+
+<b> Total Units </b>
+
+I have used a boxplot to observe if the number of units involved on a crash would be related with the severity of injuries, and identified that most accidents that have fatalities involve 2 or 3 units, therefore I have dropped all other data entries containing less than 2 and more than 3 vehicles. 
+
+<b> Area and Suburb </b>
+
+Again there are not strong correlation on the severity of crashes and the area in which occurs. With fatalities reported if accidents happenend in the city sitting at 0.1%, Metropolitan Region at 0.4% and Country at 0.3%. I have processed the data to convert it to an integer, with the following code: 
+
+1: City
+2: Metropolitan
+3: Country
+
+For the sole purpose of this project and to facilitate the data analysis, I have dropped the Suburb in which the accidents have occurred, but I will address my recommendation to this variable later in this case study. 
+
+<b> Unknown values </b>
+
+I have analysed every single one of the variables, and any of them containing values showing 'Unknown' have been discarded during the data cleaning/prossing process. 
 
 
-
-
-
-
-
-
-
+#### 3.2 Questions 
 
 <ol>
-  <li>What are the most relevant elements that contribute to road accidents with causalities?</li>
-  <li>Would the time of the day or day of the week influence when an accident happen?</li>
-  <li>What about the road conditions? The fact of a road being sealed or unsealed influence in accidents severity?</li>
-<li>Does rain impact on number of accidents?</li>
-<li>In case of accidents involving abuse of substances such as alcohol or drugs - what is the impact on the severity of a crash?</li>
-<li>Are there areas that require more attention do to higher concentration of accidents in the region? If so, what are the conditions in which accidents happen and what can we do to improve. ie. Reduce Speed Limit.</li>
-</li>
+  <li>What are the variables close related to the severity of injured victims from road accidents?</li>
+  <li>Are accidents involving abuse of substances such as alcohol or drugs - what is the impact on the severity of a crash?</li>
+  <li>Are there areas that require more attention from traffic controllers due to a higher number of accidents involving more severe injuries or fatalities? </li>
+  <li>What are the initiatives that in theory could support the reduction of accidents and potentially drive a ZERO Fatality rate from Crashes in SA?</li>
 </ol>
+
+
+### 4. Model:
+
+#### 4.1 The Decision Tree
+
+
 

@@ -196,17 +196,17 @@ The first variable I have worked was the substances. I merged both variables int
 
 After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. I have also checked on how driving under the influence of substances relates to the severity of accidents, and the results indicates that fatalities happen in 0.06% of the cases in which no substance consumption is involved, increasing to 4% when at least one substance (either alcohol or drugs) is consumed, and 18% when both alcohol and drugs have been consumed. 
 
-<img src="https://1drv.ms/u/s!Atcy32bbrRg24CIzmjtQE1BFn8aC?e=fhJJu1" alt="CSEF Severity vs Under Influence">
+![alt text](https://1drv.ms/u/s!Atcy32bbrRg24CIzmjtQE1BFn8aC?e=fhJJu1)
 
 While still working with this variable, I have also identified that accidents that happen during the weekend have more chances of having conductors under the influence of substance, in opposite to accidents happening early and mid-week. 
 
-<img src="https://1drv.ms/u/s!Atcy32bbrRg24CBeJR05jfzXaPKi?e=GI9M8f" alt="Day vs Under Influence">
+![alt text](https://1drv.ms/u/s!Atcy32bbrRg24CBeJR05jfzXaPKi?e=GI9M8f)
 
 <b> Area Speed </b> 
 
 With the area speed I have plotted a BoxPlot graphic to determine how the increase in the area speed was related to the severity of accidents, and as expected the highest the speed, the higher the severity of an accident. 
 
-<img src="https://1drv.ms/u/s!Atcy32bbrRg24CPpAGQB92b8iwaG?e=77NiGS" alt="Area Speed vs CSEF Severity">
+![alt text](https://1drv.ms/u/s!Atcy32bbrRg24CPpAGQB92b8iwaG?e=77NiGS)
 
 <b> Road Surface, Moisture Cond, Traffic Ctrls, Crash Type</b>
 
@@ -220,7 +220,7 @@ Although, also not showing a strong correlation to the severity of accidents, we
 
 I have used a boxplot to observe if the number of units involved on a crash would be related with the severity of injuries, and identified that most accidents that have fatalities involve 2 or 3 units, therefore I have dropped all other data entries containing less than 2 and more than 3 vehicles. 
 
-<img src="https://1drv.ms/u/s!Atcy32bbrRg24CEw_-ZB-4THXadk?e=yXSxUR" alt="Total Units vs CSEF Severity">
+![alt text](https://1drv.ms/u/s!Atcy32bbrRg24CEw_-ZB-4THXadk?e=yXSxUR)
 
 <b> Area and Suburb </b>
 

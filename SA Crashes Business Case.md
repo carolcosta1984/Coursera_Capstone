@@ -194,7 +194,7 @@ The first variable I have worked was the substances. I merged both variables int
   <li>2: Under the influence of both Alcohol and Other Substances</li>
  </ul>
 
-After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. I have also checked on how driving under the influence of substances relates to the severity of accidents, and the results indicates that fatalities happen in 0.06% of the cases in which no substance consumption is involved, increasing to 3% when at least one substance (either alcohol or drugs) is consumed, and 18% when both alcohol and drugs have been consumed. 
+After creating the new variable, both the DUI Involved and Drug Involved fields were dropped. I have also checked on how driving under the influence of substances relates to the severity of accidents, and the results indicates that fatalities happen in 0.06% of the cases in which no substance consumption is involved, increasing to 4% when at least one substance (either alcohol or drugs) is consumed, and 18% when both alcohol and drugs have been consumed. 
 
 While still working with this variable, I have also identified that accidents that happen during the weekend have more chances of having conductors under the influence of substance, in opposite to accidents happening early and mid-week. 
 
@@ -274,7 +274,24 @@ A decision tree in the case of Severity of Accidents would help the SA governmen
  
  ### 5. Conclusion
  
- 
+ It was clear during the data cleaning process that the two main variables influencing the severity of injured people on accidents were driving under influence of alcohol or other substances, and the speed recorded in the area and at the time the accident happened. After analysing all other variables, none of them including the Area Stats, Pavement Conditions or Weather Condition have a strong correlation to the severity of crashes, with percentage values showing very close results for other variables. 
   
-    
+Accidents involving substances have higher chances in resulting on a fatality or serious injury, with the respective results: Only 4.6% of accidents in which the driver has not consumed any substances results in a serious injury or a fatality, while this number increases to 21.4% when the responsible for the accident is driving under the influence of alcohol and an staggering 44.1% when both alcohol and other drugs are combining. Showing driving under any influence is a major determinant for the severity of accidents. 
 
+There was not a strong correlation on the area in which accidents occur or the presence of traffic controls in the severity of the accidents. 
+
+The decision tree model did not have a high accuracy due to the number of variables that did not have a strong correlation with accident severity, but, from the data analysis I have the following suggestions on initiatives that could support the reduction of accidents in SA: 
+
+<ul>
+  <li><b>Emergency Services Staff:</b> Ensure that in the days of the week when the consumption of substances is increased - Sunday, Saturday and Thursday respectively, emergency response cars and paramedics, as well as public hospital staff are present in a higher number. Sometimes, the time that takes to treat an injured person would make the difference between life and death.</li>
+  <li><b>Speed Cameras in All Areas with Speed Limit 80Km and HigherL</b> Since the speed correlates with the accident severity, installing speed cameras in all locations with speed limits 80Km or higher would actually ensure that the speed in the zone is respected, in most circumstances, what could potentially lead to a reduction on serious injuries or fatalities from accidents. This action would require budget allocation and spending by the State government, but in the long run it would pay itself.</li>
+  <li><b>Police Blitz in Areas With Speed Limit between 60Km and 80Km:</b> Ensure police personal is allocated to areas with speed limit between 60 and 80 Km, specially on days with high incidence of substance consumption. The police blitz can do random checks, but also stop cars that could potentially be involved in an accident.</li>
+  <li><b> State Based Marketing Campaign About Injuries, Substance Abuse and Respect of the Traffic Rules (Inc. Speed Limit):</b> Allocate budget for a State based marketing campaign, utilizing different medias such as Outdoors, Vehicle Decal, TV, Radio and Flyers to educate the population on the risks of not respecting traffic rules such as the speed limit or consume substances and drive.</li>
+ </ul>
+ 
+ 
+ ### 6. Future Directions
+ 
+ As mentioned the model accuracy in this occasion is not ideal, due to the lack of correlated variables and the severity of accident. Future directions, including more data collection and combining variables from other sources from the government, such as gender, age and cases in which the patients enter an hospital as a serious injury and end up becoming a fatality. 
+ 
+ The model needs to keep being refit for improved performance, and tests conduced if any of the suggestions to reduce the severity of the accidents has created a positive impact. 

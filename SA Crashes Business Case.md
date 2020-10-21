@@ -227,7 +227,7 @@ Although, also not showing a strong correlation to the severity of accidents, we
 I have used a boxplot to observe if the number of units involved on a crash would be related with the severity of injuries, and identified that most accidents that have fatalities involve 2 or 3 units, therefore I have dropped all other data entries containing less than 2 and more than 3 vehicles. 
 
 <p align="left">
-  <img src="https://1drv.ms/u/s!Atcy32bbrRg24CEw_-ZB-4THXadk?e=yXSxUR" width="350">
+  <img src="https://onedrive.live.com/?authkey=%21ADD%5F5kH7hMddp2Q&cid=3618ADDB66DF32D7&id=3618ADDB66DF32D7%2112321&parId=3618ADDB66DF32D7%2112280&o=OneUp" width="350">
 </p>
 
 <b> Area and Suburb </b>

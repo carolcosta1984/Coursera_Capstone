@@ -41,6 +41,8 @@ After loading our data set, I have processed and cleaned as following to result 
 
 My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 17 different postal codes in its jurisdiction. See below image: 
 
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Data%20Set.PNG)
+
 
 
 

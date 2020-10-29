@@ -31,14 +31,16 @@ There is no dataset easily displayed about the City of Sydney Council (as the ex
 
 ### 2.2 Data Processing: 
 
-After loading our data set, I have used a few of the components of this course to: 
+After loading our data set, I have processed and cleaned as following to result in a databases just set to continue working in the next stage of the course: 
 
 <ol> 
-  <li> Locate duplicated Postal Codes and then append the table to merge this cells into a single row. </li>
-  <li> Used the week 2 knowledge to find the Lagitude and Longitude to all of hour suburbs, so we can plot maps. </li>
+  <li> Locate duplicated Postal Codes and then used the groupby function to have a data frame in which each row was only for one postal code.</li>
+  <li> Dropped an Unnamed Column that was part of the CSV file</li>
+
 </ol>
 
-Our database, ready to start a location exploration looks as below: 
+My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 17 different postal codes in its jurisdiction. See below image: 
+
 
 
 

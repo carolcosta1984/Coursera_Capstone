@@ -39,11 +39,27 @@ After loading our data set, I have processed and cleaned as following to result 
 
 </ol>
 
-My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 17 different postal codes in its jurisdiction. See below image: 
+My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 16 different postal codes in its jurisdiction. See below image: 
 
 ![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Data%20Set.PNG)
 
+### 2.3 Data Processing - Geographical Coordinates:
 
+In order to work with FourSquares I had to find the geographical coordinates (Latitude and Longitude) and add them to the data frame. The library used to do so was <b>pgeocode</b>. 
+
+I used the querry system to return a new dataframe containing all latitude and longitude for the suburbs and then, have generate a new dataframe called <b>dfgeo</b> to combine all information into one. Resulting on the following dataframe: 
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Full%20dfgeo.PNG)
+
+# 3. Methodology: 
+
+After finalizing the data processing and create a data frame, I have used the Foursquare API to find the top venues in the city of Sydney classified as "Nightlife". I have also used K-means clustering to create clusters for the venues with similar characteristics and have plotted maps using both the geopy and and folium libraries to create a maps. 
+
+# 4. Data Analysis: 
+
+# 5. Results: 
+
+# 6. Conclusion: 
 
 
 

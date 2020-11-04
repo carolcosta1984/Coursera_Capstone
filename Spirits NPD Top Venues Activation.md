@@ -1,27 +1,32 @@
-# NPD Activation in Sydney City
+# NPD Alcoholic Beverage: Using FourSquares to indentify venues for an Experiential Marketing Activation in the City of Sydney Area
 
 ## 1. Introduction:
 
-Launching a new product in a competitive marketing requires marketers that are able to be creative and identify the opportunities that will set the brand and new product apart. An Australian Beverages Company is launching a new product - a hypothetical sugar-free spirit that is ready to hit the market. They are targeting younger professionals, that like new trends and will be keen in trying a new drink that will have a confident, fearless, and fun brand. The brand wants to land in the market creating a memorable experience and engage a brand activation agency to support in their launch, and provide the brand with the optimal opportunity to engage with consumers through an experiential marketing activation. 
+Launching a new product requires marketers to be creative and identify opportunities to set the brand and new product apart of the competition. 
+In this study we will work with the hypothetical launch of a sugar-free spirit targeting younger professionals, that like new trends and will be keen in trying a new drink that has a confident, fearless, and fun brand to it. The brand wants to launch the product in the market with a memorable experience and engage with their customers through a marketing activation. 
+
+A brand agency has been engaged to identify venues and plan the launch of this new drink. The venues recommended by the marketing company will provide the alcogol company with space to set up pop-up bars and the optimal opportunity to engage with consumers and get the market to try something new, something fun, something fearless! 
 
 ### 1.1 The Problem: 
 
-A brand agency has been engaged by an alcohol brand to plan an experiential marketing activation in key venues in the City of Sydney. They want to do pop-up bars within these venues to drive customer engagement and brand awareness. The Brand Agency will use data science and FourSquare location to recommend venues to the client. 
+The brand agency has been engaged by the alcohol brand to plan their activation in key venues in the City of Sydney. Their budget will allow to a maximum of 20 pop-up venues and they want in return the venues that will give their New Product the best visibility and return. Their intention is to drive customer engagement and brand awareness, and attract loyal and repeated consumers. 
+
+We will use a data science approach and FourSquare API's to explore the City of Sydney neighbourhoods and identify the top venues in the area to hold the pop-up bars. 
 
 ### 1.2 Audience / Interest: 
 
 <ul>
-<li>Clients: FMCG and Beverages Companies that are looking into doing similar activations.</li>
-<li>Businesses: Businesses in diverse industries hospitality, retail that may list their services in FourSquare to show on your searches.</li>
-<li>Direct Customer: The customer that will be in the receiving end of the campaign. For a succesful launch you will need to make the right choices of place and drive the engagement.</li>
-<li>Local Councils: Wishing to attract similar activations to their councils.</li> 
+<li>Clients: FMCG / Beverages Companies that are looking into doing similar activations.</li>
+<li>Businesses: Businesses in diverse industries including hospitality, retail that may both being a client looking into a similar activation or that will ensure their listing in FourSquare is up-to-date to be contenders on future searches.</li>
+<li>Direct Customer: Customer in the receiving end of similar campaigns.</li>
+<li>Local Councils: Supporting their local businesses and wishing to attract similar activations to their councils.</li> 
 </ul>
 
 ## 2. Data Acquisition
 
 ### 2.1 Data Source: 
 
-There is no dataset easily displayed about the City of Sydney Council (as the examples we used on this course), therefore, I am used The City of Sydney Council website to extract the list of suburbs part of the City of Sydney <Source: https://www.cityofsydney.nsw.gov.au/guides/city-at-a-glance>,and the Australian Post website to identifying the postcodes for each suburb. OUr file contains three columns, as follows: 
+There was no dataset ready for use showing the City of Sydney Council, therefore, we used The City of Sydney Council website to extract the list of suburbs part of the area, and the Australian Post website to identifying the postcodes for each of the suburbs. Our dataframe was them built with three columns: 
 
 <ul>
   <li>Postcode: The postcode for each of the suburbs</li> 
@@ -29,25 +34,29 @@ There is no dataset easily displayed about the City of Sydney Council (as the ex
   <li>Suburbs: List of suburbs located in the City of Sydney Council.</li> 
 </ul>
 
+Source(s): 
+<https://www.cityofsydney.nsw.gov.au/guides/city-at-a-glance>
+<https://auspost.com.au/>
+
+
 ### 2.2 Data Processing: 
 
-After loading our data set, I have processed and cleaned as following to result in a databases just set to continue working in the next stage of the course: 
+After loading our data set, we have done some data cleaning and processing: 
 
 <ol> 
-  <li> Locate duplicated Postal Codes and then used the groupby function to have a data frame in which each row was only for one postal code.</li>
-  <li> Dropped an Unnamed Column that was part of the CSV file</li>
-
+  <li> Duplicated Postal Codes: We have identified any suburbs that share the same postal code and applied the groupby function to have unique postal code values. </li>
+  <li> Unnamed Column: We have dropped a column that was part of the CSV file, but of no use for this study. </li>
 </ol>
 
-My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 16 different postal codes in its jurisdiction. See below image: 
+The original data set is composed of 17 rows and 3 columns (Including headers). For the purposes of this study, it means we have identified 16 suburbs located within the City of Sydney perimether. Refer to the above image for our initial data set information: 
 
 ![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Data%20Set.PNG)
 
 ### 2.3 Data Processing - Geographical Coordinates:
 
-In order to work with FourSquares I had to find the geographical coordinates (Latitude and Longitude) and add them to the data frame. The library used to do so was <b>pgeocode</b>. 
+In order to work with FourSquares I had to find the geographical coordinates (Latitude and Longitude) and ensure that they were added to the dataframe. I have used the <b>pgeocode</b> library.
 
-I used the querry system to return a new dataframe containing all latitude and longitude for the suburbs and then, have generate a new dataframe called <b>dfgeo</b> to combine all information into one. Resulting on the following dataframe: 
+A new dataframe was created from the pgeocode query containing all geographical information required, then both dataframes have been joining into a new one, that we named <strong>dfgeo</strong>, and a new data cleaning applied to drop any irrelevant columns or duplicated information with the final dataframe as follows: 
 
 ![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Full%20dfgeo.PNG)
 

@@ -19,3 +19,34 @@ This type of solution would appeal to a range of companies in a similar situatio
 <li> Local government / councils wishing to attract similar activations to their areas.</li>
 </ul>
 
+## 2. Data: 
+
+I used the City of Sydney Council website to extract the list of suburbs part of the area and the Australian Post website to identifying the postcodes for each suburb and put together a CSV file with three different columns: 
+
+<ul>
+<li> Postcode: The postcode for each of Suburb.</li>
+<li> Region: As we are exclusive working with the City of Sydney for this project, it will be the only region in the file. </li>
+<li> Suburbs: List of suburbs located in the City of Sydney Council area.</li>
+</ul>
+
+
+### Data Processing:
+
+After loading the data set, I have processed and cleaned the databases to get a dataframe that was adequate to work with geographical data. Some observations below: 
+
+<ul> 
+  <li> The initial CSV file when loaded to Jupyter notebooks have an unnamed column. The first thing done in the data cleaning was to apply the <b> .drop</b> function to remove the column.</li>
+  <li> I have them used the <b>value_counts</b> function on the postcodes to identify any suburbs thatwere located on a similar postcode and combined them into a single line using a <b>groupby</b>. </li>
+</ul>
+
+The initial data cleanse, resulted on the dataframe below: 
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Data%20Set.PNG)
+
+
+
+
+My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 17 different postal codes in its jurisdiction. See below image: <image has been placed on my GitHub document supplied.>
+
+
+<Source: https://www.cityofsydney.nsw.gov.au/guides/city-at-a-glance>

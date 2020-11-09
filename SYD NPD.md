@@ -77,7 +77,30 @@ In my Foursquare link, I have applied the <b>explore</b> option to return the li
   <li> Query: <b>query</b> 	Allows you to add a term to be searched against a venue's tips, category, etc. The query parameter has no effect when a section is specified.</li>
   <li> Time: <b>time</b> Foursquare basically operates on your local time, so as I wanted to identifying nightlife spots, my results were not accurate in the beginning. The solution I figured was to set up on my search link the time as a parameter. When you set the time parameter to "any", Foursquare will retrieve results for any time of day, instead of only your current time.</li>
   <li> Day: <b>day</b> - Similar to the time parameter, I set the day to "any" allowing be to observe not only venues that were open on the day of the week I was doing my consultation. </li>
+  <li> Sort By Popularity: <sortByPopularity</b> - another useful parameter that uses a Boolean flag to sort the results by popularity instead of relevance.</li>
   </ul> 
   
-  
-sortByPopularity = 1
+ Applying all of the parameters above, this is what my defined Foursquare URL looked like:
+ 
+ <'https://api.foursquare.com/v2/venues/explore?client_id=RWXZLBMYPCN4NXJRLTNQNI45MT2V1IOS3JNIYAB1DIFTNNKO&client_secret=5OGQBTH2H5QUWTK5CYRPL5BZ2QS5M32X3ZTSKNXHY3RS0EIX&ll=-33.8853222,151.2065221&v=20180604&section=topPicks&categoryId=4d4b7105d754a06376d81259&query=Drinks&radius=5000&timeany&dayany&limit=100&sortByPopularity1'>
+ 
+After visualize my results with the JSON .getresults command, I have transformed it into a venues dataframe. When you verify my Jupyter Notebook, you will see that my results show 148 responses to my search, but as our limit have been defined to 100, our dataframe was returned with the top 100 venues within the researched area. This is how our SYD_Venues dataframe looked like: 
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Syd%20Venues%20DF.PNG)
+
+Using the venues dataframe and the original map with the City of Sydney Area with plotted neighbourhoods, I have plotted a new and interactive map with the top 100 venues in the area around the neighbourhoods, again this would show us how correct were our results. The map below was the result, where the blue marks identify the neighbourhood and the green marks identify the venues:  
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Map%20with%20100%20venues%20plotted%20around%20neighbourhood.PNG)
+
+Our client in question for this hypotheses, had a budget that would only allow him to place pop-up bars in the top 30 venues, therefore we used a slicing method to select only the top 30 venues on our list and returned the following list of recommendations and map: 
+
+<b>Recommendations List:</b>
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Recommendations%20List.PNG)
+
+<Recommendations Map:</b>
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Recommended.PNG)
+
+
+ 

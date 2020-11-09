@@ -43,10 +43,41 @@ The initial data cleanse, resulted on the dataframe below:
 
 ![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Data%20Set.PNG)
 
+The data set is composed of 17 rows and 3 columns including headers. This means that the City of Sydney has a total of 16 different postal codes in its jurisdiction.
 
+### Data Sources: 
+<ul>
+  <li><b>City of Sydney:</b> https://www.cityofsydney.nsw.gov.au/guides/city-at-a-glance</li>
+  <li><b>Australian Post:</b> https://auspost.com.au/</li>
+ </ul>
+ 
+ ## 3. Methodology:
+ 
+In order to identifying venues to make recommendations to our client, I used the location data technology that enables you to work with geographical data - Foursquare, and for the puporse of this study it was the solely method used, allowing us to identifying venues and plot maps with "all locations" and a "limited number of locations". 
 
+## 4. Results: 
 
-My actual data set is composed of 17 rows and 3 columns, meaning that the City of Sydney has a total of 17 different postal codes in its jurisdiction. See below image: <image has been placed on my GitHub document supplied.>
+With our original dataframe built, the next step of our data was to find out the latitude and longitude for all of our neighborhoods. I have used the query system <b>geocode</b> and saved the results in a separate dataframe, that once finalized I applied the <b>pd.concat</b> function to join with our original dataframe. The result after the dataframes were combined, any relevant columns were dropped or renamed, was the dataset below: 
 
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Full%20dfgeo.PNG)
 
-<Source: https://www.cityofsydney.nsw.gov.au/guides/city-at-a-glance>
+With my dataset updated with the geographic coordinates and all required libraries installed, I started by finding the City of Sydney coordinates and creating a map with the Suburbs in our dataframe plotted to it, so we could ensure that all our data was correct. The initial map looked as the below: 
+
+![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/City%20of%20Sydney%20with%20postcodes%20plotted.PNG)
+
+As in this project, we were looking in identifying venues that would allow alcoholic drinks to be served, I have done some research on how I could best use the Foursquare application to narrow down my search only to venues that would be able to feature our pop-up bars. 
+
+In my Foursquare link, I have applied the <b>explore</b> option to return the list of recommended venues within the City of Sydney Area, and have also applied the following parameters to narrow down my search:
+
+<ul> 
+  <li> Latitude/Longitude: <b>ll</b> - ensuring that the link would return venues for the area we were looking for.</li>
+  <li> Radius: <b>radius </b> - distance to look within metres.</li> 
+  <li> Section: <b>section</b> - Foursquare allows you to chose a section in order to limit your results to venues of a specific category. You can choose from food, drinks, coffee, shops, arts, outdoors, sights, trending, nextVenues (venues frequently visited after a given venue), or topPicks (a mix of recommendations generated without a query from the user). I have used the topPicks in our project. </li> 
+  <li>Category ID: <b>categoryId</b> - In order to help narrow down the search, you can also limit the category you wish to search. In this project we have used the specific ID for "Nightlife Spots".</li>
+  <li> Query: <b>query</b> 	Allows you to add a term to be searched against a venue's tips, category, etc. The query parameter has no effect when a section is specified.</li>
+  <li> Time: <b>time</b> Foursquare basically operates on your local time, so as I wanted to identifying nightlife spots, my results were not accurate in the beginning. The solution I figured was to set up on my search link the time as a parameter. When you set the time parameter to "any", Foursquare will retrieve results for any time of day, instead of only your current time.</li>
+  <li> Day: <b>day</b> - Similar to the time parameter, I set the day to "any" allowing be to observe not only venues that were open on the day of the week I was doing my consultation. </li>
+  </ul> 
+  
+  
+sortByPopularity = 1

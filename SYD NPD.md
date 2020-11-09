@@ -8,7 +8,7 @@ In this project we have a ficticious beverage company that wants to launch their
 
 The company has engaged a brand agency to suggest and negotiate on their behalf space on key venues in the City of Sydney Area for the set up of "Summer Pop-Up Bars". The engaged agency will use one of it's data scientists and his/her knowledge of Foursquare, a location based application, to recommend venues to the client, through the exploration of the area where the activation will happen. 
 
-### 1.1 Audiences: 
+### Audiences: 
 
 This type of solution would appeal to a range of companies in a similar situation and is one of the many uses for the Foursquare application, including: 
 
@@ -102,5 +102,17 @@ Our client in question for this hypotheses, had a budget that would only allow h
 
 ![](https://github.com/carolcosta1984/Coursera_Capstone/blob/master/Images/Recommended.PNG)
 
+The blue marks identify the Suburbs in the City of Sydney and the red marks identify all the reccommended venues. 
 
- 
+## Discussion: 
+
+The major problem I tried to address in this project was to reccommend venues to a client for an experiential marketing activation using geographic data. I have achieved so, throuh the use of the Foursquare API, Python language and libraries, that allowed me to work with dataframes and also plot maps to make the maps and reccommendations easy to visualize. 
+
+## Conclusion: 
+
+Data science is one of the hot skills of the moment and I think any professional can benefit of learning/educating themselves about it. 
+Using Python and its libraries and leveraging the Foursquare API we were able to make recommendations on venues within some lines of code, instead of spending resources and days of research looking for venues. As a Sydneysider, myself, I can say that the recommended venues for the location make complete sense, and I could go further in this study and let's say nail the venues down to a point that "breweries" would not be showing on our results. 
+
+I trust I demonstrated in this project how useful data science, and especifically the Foursquares API can be for marketing professionals. With some lines of coding you can have a list of places for an event, brand activation or campaign placement. You can save your team precious time and deliver information that could take weeks to be completed in a matter of seconds. 
+
+Practice leads to perfection and my intention is to continue applying the data science knowledge gained during this course in my daily activities and develop my skills further. 
